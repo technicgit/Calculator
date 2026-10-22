@@ -1,6 +1,6 @@
-# Java Calculator
+Java Calculator
 
-A simple console calculator created as a Day 3 exercise for a QA Automation Bootcamp. The program accepts two numbers and lets the user choose addition, subtraction, multiplication, or division.
+A Java console calculator that accepts two numbers and performs addition, subtraction, multiplication, or division based on a menu selection.
 
 ## Features
 
@@ -10,7 +10,7 @@ A simple console calculator created as a Day 3 exercise for a QA Automation Boot
 - Prevents division by zero and displays an error message.
 - Displays `Invalid Choice` when the selected number is outside the menu.
 
-## Java Concepts Practiced
+## Implementation Details
 
 - Variables and data types: `double` for the two numbers and `int` for the menu choice.
 - User input with `Scanner`, `nextDouble()`, and `nextInt()`.
@@ -20,17 +20,18 @@ A simple console calculator created as a Day 3 exercise for a QA Automation Boot
 - Console output with `System.out.println()`.
 - Closing the scanner after collecting input.
 
-## How to Run in Eclipse
+## How to Run
 
-You need a Java Development Kit (JDK) configured in Eclipse IDE for Java Developers. No external libraries are required.
+Requires a Java Development Kit (JDK), with `java` and `javac` available in your terminal. No external libraries are required.
 
-1. Open your Java project in Eclipse.
-2. Create a package named `day3` under the source folder if it does not already exist.
-3. Save the source code in that package as `Calculator.java`. The file must begin with `package day3;`.
-4. Right-click `Calculator.java` and select **Run As > Java Application**.
-5. Enter the first number and press Enter.
-6. Enter the second number and press Enter.
-7. Enter the operation number and press Enter.
+From the directory containing `Calculator.java`, compile and run:
+
+```sh
+javac -d out Calculator.java
+java -cp out day3.Calculator
+```
+
+The run command uses the package declared in the source file. Enter the first number, second number, and operation number when prompted, pressing Enter after each value.
 
 | Choice | Operation |
 | --- | --- |
